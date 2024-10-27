@@ -1,12 +1,14 @@
 [Unit]
-Description = rathole server
-After = network.target syslog.target
-Wants = network.target
+Description=Rathole Server Service
+After=network.target
 
 [Service]
-Type = simple
-ExecStart = /root/s/rathole /root/s/s.toml
+Type=simple
+User=nobody
+Restart=on-failure
+RestartSec=5s
+ExecStart=/usr/s/rathole -s /usr/s/rathole.toml
+LimitNOFILE=1048576
 
 [Install]
-WantedBy = multi-user.target
-
+WantedBy=multi-user.target
