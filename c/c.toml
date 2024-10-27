@@ -1,0 +1,14 @@
+[client]
+remote_addr = "70.34.215.27:2333"
+default_token = "ETH_Node"
+
+[client.services.30303]
+local_addr = "127.0.0.1:30303"
+
+[client.services.tcp13000]
+type = "tcp"
+local_addr = "127.0.0.1:13000"
+
+[client.services.udp12000]
+type = "udp"
+local_addr = "127.0.0.1:12000"
