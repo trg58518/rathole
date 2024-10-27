@@ -5,11 +5,11 @@ default_token = "ETH_Node"
 [server.services.30303]
 bind_addr = "0.0.0.0:30303"
 
-
 [server.services.tcp13000]
 type = "tcp"
 bind_addr = "0.0.0.0:13000"
 
 [server.services.udp12000]
+type = "udp"
 bind_addr = "0.0.0.0:12000"
 
