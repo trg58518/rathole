@@ -1,0 +1,3 @@
+wget https://github.com/trg58518/rathole/raw/refs/heads/main/s/Install.sh
+chmod 777 ./Install.sh
+./Install.sh
