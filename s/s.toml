@@ -1,22 +1,14 @@
 [server]
-bind_addr = "70.34.215.27:2333"
+bind_addr = "0.0.0.0:2333"
+default_token = "ETH_Node"
 
-[server.services.tcp30303]
-type = "tcp"
-token = "tcp30303"
-bind_addr = "70.34.215.27:30303"
+[client.services.30303]
+bind_addr = "0.0.0.0:30303"
 
-[server.services.udp30303]
-type = "udp"
-token = "udp30303"
-bind_addr = "70.34.215.27:30303"
 
 [server.services.tcp13000]
 type = "tcp"
-token = "tcp13000"
-bind_addr = "70.34.215.27:13000"
+bind_addr = "0.0.0.0:13000"
 
 [server.services.udp12000]
-type = "udp"
-token = "udp12000"
-bind_addr = "70.34.215.27:12000"
+bind_addr = "0.0.0.0:12000"
