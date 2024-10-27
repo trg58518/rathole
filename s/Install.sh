@@ -10,5 +10,6 @@ wget -O /etc/systemd/system/rathole.service https://github.com/trg58518/rathole/
 chmod -R 777 /usr/s
 chmod 777 /etc/systemd/system/rathole.service
 
+systemctl daemon-reload
 systemctl start rathole
 systemctl enable rathole
